@@ -1,0 +1,33 @@
+{
+  "name": "user-authentication-and-authorization",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "node.js",
+    "express.js",
+    "cors",
+    "dotenv",
+    "nodemon",
+    "mongoose",
+    "mongoDB",
+    "bcrypt",
+    "JWT"
+  ],
+  "author": "Vignesh",
+  "license": "ISC",
+  "description": "Implementation of user authentication and authorization using Bearer tokens in a Node.js application with Express.js, Mongoose, and JWT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.0",
+    "nodemon": "^3.1.10"
+  }
+}
