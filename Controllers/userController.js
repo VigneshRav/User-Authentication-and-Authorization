@@ -46,3 +46,17 @@ export const loginUser = async (req, res) => {
     res.status(200).json({ message: error.message });
   }
 };
+
+//Get User Function:
+export const getUser = async (req, res) => {
+  try {
+    const _id = req.user._id;
+    const user = await Users.findById({ _id });
+    res.status(200).json({
+      message: `Welcome ${user.UserName}, here is your profile`,
+      data: user,
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
